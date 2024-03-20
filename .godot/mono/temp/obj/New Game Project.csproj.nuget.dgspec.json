@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hussainalhelfi/Documents/ddd/Team-5/New Game Project.csproj": {}
+    "C:\\Users\\thoma\\OneDrive\\Team-5-main\\New Game Project.csproj": {}
   },
   "projects": {
-    "/Users/hussainalhelfi/Documents/ddd/Team-5/New Game Project.csproj": {
+    "C:\\Users\\thoma\\OneDrive\\Team-5-main\\New Game Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hussainalhelfi/Documents/ddd/Team-5/New Game Project.csproj",
+        "projectUniqueName": "C:\\Users\\thoma\\OneDrive\\Team-5-main\\New Game Project.csproj",
         "projectName": "New Game Project",
-        "projectPath": "/Users/hussainalhelfi/Documents/ddd/Team-5/New Game Project.csproj",
-        "packagesPath": "/Users/hussainalhelfi/.nuget/packages/",
-        "outputPath": "/Users/hussainalhelfi/Documents/ddd/Team-5/.godot/mono/temp/obj/",
+        "projectPath": "C:\\Users\\thoma\\OneDrive\\Team-5-main\\New Game Project.csproj",
+        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thoma\\OneDrive\\Team-5-main\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/hussainalhelfi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -70,11 +65,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
             }
           ],
           "frameworkReferences": {
@@ -82,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

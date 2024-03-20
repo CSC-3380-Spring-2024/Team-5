@@ -1,46 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2qyk02xf5hkv"]
+[gd_scene load_steps=3 format=3 uid="uid://b2qyk02xf5hkv"]
 
-[ext_resource type="PackedScene" uid="uid://82a20eu1aqyu" path="res://Scenes/player.tscn" id="1_nqsxe"]
+[ext_resource type="PackedScene" uid="uid://82a20eu1aqyu" path="res://Scenes/Player/player.tscn" id="1_nqsxe"]
 [ext_resource type="PackedScene" uid="uid://b6t21fne0yyx5" path="res://Scenes/level0.tscn" id="2_olmta"]
-[ext_resource type="PackedScene" uid="uid://dwmikcdcuccab" path="res://Scenes/enemy.tscn" id="3_1nlpj"]
-[ext_resource type="PackedScene" uid="uid://e3xs8nnx7lxh" path="res://Scenes/seashell.tscn" id="4_ifogr"]
-[ext_resource type="PackedScene" uid="uid://tku2ooftur5w" path="res://Scenes/view.tscn" id="5_hoxcg"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nl7fp"]
-size = Vector2(70.6999, 40.3118)
 
 [node name="Root" type="Node2D"]
+position = Vector2(70, 79)
 scale = Vector2(1, 1.002)
 
 [node name="level0" parent="." instance=ExtResource("2_olmta")]
-position = Vector2(-31, -192)
+position = Vector2(-217, -337.325)
 
 [node name="Player" parent="." instance=ExtResource("1_nqsxe")]
-position = Vector2(353, 235)
+position = Vector2(128, 115.768)
 scale = Vector2(0.433151, 0.495604)
-speed = null
-dodge_speed = null
-max_dodge_distance = null
-
-[node name="Area2D" type="Area2D" parent="Player" groups=["player"]]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D"]
-position = Vector2(-8.08014, -7.18768)
-scale = Vector2(1.92661, 3.287)
-shape = SubResource("RectangleShape2D_nl7fp")
-
-[node name="Enemy" parent="." instance=ExtResource("3_1nlpj")]
-position = Vector2(381, 702.595)
-scale = Vector2(0.885003, 0.857771)
-
-[node name="seashell" parent="." instance=ExtResource("4_ifogr")]
-position = Vector2(636, 196.607)
-scale = Vector2(0.2, 0.2)
-
-[node name="seashell2" parent="." instance=ExtResource("4_ifogr")]
-position = Vector2(937, 78.8423)
-scale = Vector2(0.2, 0.2)
-
-[node name="View" parent="." instance=ExtResource("5_hoxcg")]
-
-[connection signal="area_entered" from="Player/Area2D" to="Player" method="_on_area_2d_area_entered"]

@@ -1,0 +1,90 @@
+[gd_scene load_steps=10 format=3 uid="uid://82a20eu1aqyu"]
+
+[ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_oa1ny"]
+[ext_resource type="Texture2D" uid="uid://br7x1nmmy5x3u" path="res://TempResources/icon.svg" id="2_outys"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3wbu"]
+size = Vector2(140.384, 39.5162)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dh2jn"]
+size = Vector2(75.94, 20.7282)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0d20f"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xapi8"]
+bg_color = Color(1, 0.305882, 0.490196, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xp4ik"]
+size = Vector2(170.804, 170)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gvtcs"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rel7"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(389, 312)
+scale = Vector2(1.007, 1)
+script = ExtResource("1_oa1ny")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.96523, 60)
+scale = Vector2(0.870077, 1.0246)
+shape = SubResource("RectangleShape2D_p3wbu")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.96526, 13)
+scale = Vector2(1.007, 1)
+texture = ExtResource("2_outys")
+
+[node name="DodgeTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-5.9583, 28)
+
+[node name="Area2D" type="Area2D" parent="." groups=["player"]]
+position = Vector2(-0.993049, 7)
+scale = Vector2(0.92988, 2.15752)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(3.73776, 2.78094)
+scale = Vector2(1.92661, 3.287)
+shape = SubResource("RectangleShape2D_dh2jn")
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = -76.0
+offset_top = -71.0
+offset_right = 81.0
+offset_bottom = -55.0
+theme_override_styles/background = SubResource("StyleBoxFlat_0d20f")
+theme_override_styles/fill = SubResource("StyleBoxFlat_xapi8")
+step = 5.0
+value = 100.0
+show_percentage = false
+
+[node name="PlayerHitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerHitbox"]
+position = Vector2(2.97919, 11)
+shape = SubResource("RectangleShape2D_xp4ik")
+
+[node name="CooldownTimer" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="CooldownBar" type="ProgressBar" parent="."]
+offset_left = -84.4091
+offset_top = 85.0
+offset_right = 92.5909
+offset_bottom = 93.0
+theme_override_styles/background = SubResource("StyleBoxFlat_gvtcs")
+theme_override_styles/fill = SubResource("StyleBoxFlat_3rel7")
+max_value = 1.5
+value = 1.5
+show_percentage = false
+
+[connection signal="timeout" from="DodgeTimer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]

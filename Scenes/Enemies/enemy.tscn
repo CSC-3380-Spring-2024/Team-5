@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://dwmikcdcuccab"]
+
+[ext_resource type="Script" path="res://Scenes/Enemies/enemy.cs" id="1_2ec6p"]
+[ext_resource type="Texture2D" uid="uid://l2uiw6c25qqp" path="res://TempResources/16x16/Sprites/Slime 01.png" id="2_1gddy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrlwt"]
+atlas = ExtResource("2_1gddy")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkfbv"]
+atlas = ExtResource("2_1gddy")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luwxv"]
+atlas = ExtResource("2_1gddy")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gbsq"]
+atlas = ExtResource("2_1gddy")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_loc8b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrlwt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pkfbv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luwxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gbsq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5yj07"]
+radius = 58.9053
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cqg6x"]
+radius = 110.291
+
+[node name="Enemy" type="CharacterBody2D"]
+position = Vector2(394, 341)
+scale = Vector2(0.869545, 1.06441)
+script = ExtResource("1_2ec6p")
+
+[node name="enemySprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-11, -4)
+scale = Vector2(6.00317, 4.93171)
+sprite_frames = SubResource("SpriteFrames_loc8b")
+animation = &"idle"
+offset = Vector2(2.08165e-12, 2.08165e-12)
+
+[node name="detectionArea" type="Area2D" parent="enemySprite" groups=["enemy"]]
+position = Vector2(7.77173, -36.8333)
+scale = Vector2(-0.704242, 1.39847)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemySprite/detectionArea"]
+position = Vector2(10, 30)
+scale = Vector2(1.40978, -0.771873)
+shape = SubResource("CircleShape2D_5yj07")
+debug_color = Color(0.713726, 0.466667, 0.360784, 0.419608)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-14, 8)
+scale = Vector2(0.56907, -0.519485)
+shape = SubResource("CircleShape2D_cqg6x")
+one_way_collision_margin = 0.0
+debug_color = Color(0.309804, 0.560784, 0.772549, 0.631373)
+
+[connection signal="area_entered" from="enemySprite/detectionArea" to="." method="_on_detection_area_area_entered"]
+[connection signal="area_exited" from="enemySprite/detectionArea" to="." method="_on_detection_area_area_exited"]
