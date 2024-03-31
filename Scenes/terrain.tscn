@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5hqjv"]
 size = Vector2(124, 124)
 
-[node name="generic_terrain" type="Node2D"]
+[node name="generic_terrain" type="Node2D" groups=["obstacles"]]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

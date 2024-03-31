@@ -20,7 +20,7 @@ public partial class spawner : Node2D
 	{
         
 		playerScene=(PackedScene)ResourceLoader.Load("res://Scenes/Player/player.tscn");
-		player=GetNode<Node2D>("Player");
+		player=(Node2D)playerScene.Instantiate();
 		
 	}
 
@@ -64,6 +64,7 @@ public partial class spawner : Node2D
 				return false;
 			}
 		}
+		
 		return true;
 
 	}

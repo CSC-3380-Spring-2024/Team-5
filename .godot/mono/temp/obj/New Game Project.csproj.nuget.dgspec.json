@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hussainalhelfi/Downloads/ddddd/Team-5/New Game Project.csproj": {}
+    "/Users/hussainalhelfi/Downloads/troubleshoot/Team-5/New Game Project.csproj": {}
   },
   "projects": {
-    "/Users/hussainalhelfi/Downloads/ddddd/Team-5/New Game Project.csproj": {
+    "/Users/hussainalhelfi/Downloads/troubleshoot/Team-5/New Game Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hussainalhelfi/Downloads/ddddd/Team-5/New Game Project.csproj",
+        "projectUniqueName": "/Users/hussainalhelfi/Downloads/troubleshoot/Team-5/New Game Project.csproj",
         "projectName": "New Game Project",
-        "projectPath": "/Users/hussainalhelfi/Downloads/ddddd/Team-5/New Game Project.csproj",
+        "projectPath": "/Users/hussainalhelfi/Downloads/troubleshoot/Team-5/New Game Project.csproj",
         "packagesPath": "/Users/hussainalhelfi/.nuget/packages/",
-        "outputPath": "/Users/hussainalhelfi/Downloads/ddddd/Team-5/.godot/mono/temp/obj/",
+        "outputPath": "/Users/hussainalhelfi/Downloads/troubleshoot/Team-5/.godot/mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hussainalhelfi/.nuget/NuGet/NuGet.Config"
