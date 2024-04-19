@@ -8,8 +8,6 @@ public partial class enemyStats : CharacterBody2D
     protected int health;
     protected int damage;
 
-
-
     public void takeDamage(int amount){
         health-=amount;
         if(health<=0){
@@ -17,14 +15,7 @@ public partial class enemyStats : CharacterBody2D
         }
 
     }
-
-
     protected virtual void die(){
         QueueFree();
-    }
-
-       public void setHealthBar(ProgressBar healthBarScene){
-        this.healthBarScene=healthBarScene;
-
     }
 }

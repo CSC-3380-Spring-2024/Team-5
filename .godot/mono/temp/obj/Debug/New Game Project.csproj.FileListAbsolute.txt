@@ -123,21 +123,3 @@ C:/Users/No Thanks/Desktop/DDD/Team-5/.godot/mono/temp/obj/Debug/refint/New Game
 C:/Users/No Thanks/Desktop/DDD/Team-5/.godot/mono/temp/obj/Debug/New Game Project.pdb
 C:/Users/No Thanks/Desktop/DDD/Team-5/.godot/mono/temp/obj/Debug/New Game Project.genruntimeconfig.cache
 C:/Users/No Thanks/Desktop/DDD/Team-5/.godot/mono/temp/obj/Debug/ref/New Game Project.dll
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/bin/Debug/New Game Project.deps.json
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/bin/Debug/New Game Project.runtimeconfig.json
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/bin/Debug/New Game Project.dll
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/bin/Debug/New Game Project.pdb
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/bin/Debug/GodotSharp.dll
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game Project.csproj.AssemblyReference.cache
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game Project.GeneratedMSBuildEditorConfig.editorconfig
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game Project.AssemblyInfoInputs.cache
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game Project.AssemblyInfo.cs
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game Project.csproj.CoreCompileInputs.cache
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game Project.sourcelink.json
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game.D781FC22.Up2Date
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game Project.dll
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/refint/New Game Project.dll
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game Project.pdb
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/New Game Project.genruntimeconfig.cache
-/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/Debug/ref/New Game Project.dll

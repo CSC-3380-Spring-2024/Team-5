@@ -22,3 +22,4 @@ res://Scenes/Menu/MainMenu.cs
 res://Scenes/obstacleSpawner.cs
 res://Scenes/options.cs
 res://Scenes/spawner.cs
+res://Scenes/Enemies/jellyfish.cs

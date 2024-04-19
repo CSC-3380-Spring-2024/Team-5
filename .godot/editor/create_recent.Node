@@ -12,3 +12,11 @@ CollisionPolygon2D
 StaticBody2D
 Area2D
 CollisionShape2D
+Marker2D
+Node2D
+Label
+TextureRect
+ColorRect
+TileMap
+Control
+CanvasLayer

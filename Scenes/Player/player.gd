@@ -49,7 +49,7 @@ func _on_player_hitbox_area_entered(area):
 			$HealthBar.value = current_health
 	if area.is_in_group("enemy"):
 		enemies_in_hitbox.append(area)
-		take_damage(20)
+		take_damage(15)
 		$damageTimer.start();
 		$HealthBar.value = current_health
 
@@ -60,4 +60,4 @@ func _on_player_hitbox_area_exited(area):
 	
 func _on_damage_timer_timeout():
 	for enemy in enemies_in_hitbox:
-		take_damage(20)
+		take_damage(15)
