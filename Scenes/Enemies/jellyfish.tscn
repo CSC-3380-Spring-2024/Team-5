@@ -1,78 +1,59 @@
-[gd_scene load_steps=25 format=3 uid="uid://cfmrwr4w530tq"]
+[gd_scene load_steps=24 format=3 uid="uid://cfmrwr4w530tq"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/jellyfish.cs" id="1_twupr"]
-[ext_resource type="Texture2D" path="res://TempResources/16x16/Sprites/3DS - Regular Show Mordecai and Rigby in 8-Bit Land - Mutant Jellyfish.png" id="2_avihw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pqfdo"]
-atlas = ExtResource("2_avihw")
 region = Rect2(127, 154, 51, 77)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qp6iu"]
-atlas = ExtResource("2_avihw")
 region = Rect2(181, 154, 51, 77)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_si0ea"]
-atlas = ExtResource("2_avihw")
 region = Rect2(235, 154, 51, 77)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_063vm"]
-atlas = ExtResource("2_avihw")
 region = Rect2(49, 71, 49, 71)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vjmw6"]
-atlas = ExtResource("2_avihw")
 region = Rect2(98, 71, 49, 71)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6bfgj"]
-atlas = ExtResource("2_avihw")
 region = Rect2(147, 71, 49, 71)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l4hnh"]
-atlas = ExtResource("2_avihw")
 region = Rect2(196, 71, 49, 71)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ojep0"]
-atlas = ExtResource("2_avihw")
 region = Rect2(245, 71, 49, 71)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6ymff"]
-atlas = ExtResource("2_avihw")
 region = Rect2(17, 10, 44, 75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sjeqx"]
-atlas = ExtResource("2_avihw")
 region = Rect2(78, 10, 44, 75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vv386"]
-atlas = ExtResource("2_avihw")
 region = Rect2(139, 10, 44, 75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ykqu2"]
-atlas = ExtResource("2_avihw")
 region = Rect2(200, 10, 44, 75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vxhnl"]
-atlas = ExtResource("2_avihw")
 region = Rect2(261, 10, 44, 75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8p21b"]
-atlas = ExtResource("2_avihw")
 region = Rect2(16, 0, 55, 77)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_boley"]
-atlas = ExtResource("2_avihw")
 region = Rect2(74, 0, 55, 77)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_57xcs"]
-atlas = ExtResource("2_avihw")
 region = Rect2(132, 0, 55, 77)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7xed6"]
-atlas = ExtResource("2_avihw")
 region = Rect2(190, 0, 55, 77)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4cxtn"]
-atlas = ExtResource("2_avihw")
 region = Rect2(248, 0, 55, 77)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5a0c5"]

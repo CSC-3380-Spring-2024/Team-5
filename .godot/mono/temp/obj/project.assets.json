@@ -88,19 +88,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/bricetillman/.nuget/packages/": {}
+    "/Users/hussainalhelfi/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bricetillman/Team-5/New Game Project.csproj",
+      "projectUniqueName": "/Users/hussainalhelfi/Downloads/dd/Team-5/New Game Project.csproj",
       "projectName": "New Game Project",
-      "projectPath": "/Users/bricetillman/Team-5/New Game Project.csproj",
-      "packagesPath": "/Users/bricetillman/.nuget/packages/",
-      "outputPath": "/Users/bricetillman/Team-5/.godot/mono/temp/obj/",
+      "projectPath": "/Users/hussainalhelfi/Downloads/dd/Team-5/New Game Project.csproj",
+      "packagesPath": "/Users/hussainalhelfi/.nuget/packages/",
+      "outputPath": "/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/bricetillman/.nuget/NuGet/NuGet.Config"
+        "/Users/hussainalhelfi/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -168,7 +168,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }
