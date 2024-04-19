@@ -1,0 +1,216 @@
+[gd_scene load_steps=25 format=3 uid="uid://cfmrwr4w530tq"]
+
+[ext_resource type="Script" path="res://Scenes/Enemies/jellyfish.cs" id="1_twupr"]
+[ext_resource type="Texture2D" path="res://TempResources/16x16/Sprites/3DS - Regular Show Mordecai and Rigby in 8-Bit Land - Mutant Jellyfish.png" id="2_avihw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqfdo"]
+atlas = ExtResource("2_avihw")
+region = Rect2(127, 154, 51, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp6iu"]
+atlas = ExtResource("2_avihw")
+region = Rect2(181, 154, 51, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_si0ea"]
+atlas = ExtResource("2_avihw")
+region = Rect2(235, 154, 51, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_063vm"]
+atlas = ExtResource("2_avihw")
+region = Rect2(49, 71, 49, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjmw6"]
+atlas = ExtResource("2_avihw")
+region = Rect2(98, 71, 49, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bfgj"]
+atlas = ExtResource("2_avihw")
+region = Rect2(147, 71, 49, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4hnh"]
+atlas = ExtResource("2_avihw")
+region = Rect2(196, 71, 49, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojep0"]
+atlas = ExtResource("2_avihw")
+region = Rect2(245, 71, 49, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ymff"]
+atlas = ExtResource("2_avihw")
+region = Rect2(17, 10, 44, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjeqx"]
+atlas = ExtResource("2_avihw")
+region = Rect2(78, 10, 44, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vv386"]
+atlas = ExtResource("2_avihw")
+region = Rect2(139, 10, 44, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykqu2"]
+atlas = ExtResource("2_avihw")
+region = Rect2(200, 10, 44, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxhnl"]
+atlas = ExtResource("2_avihw")
+region = Rect2(261, 10, 44, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8p21b"]
+atlas = ExtResource("2_avihw")
+region = Rect2(16, 0, 55, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boley"]
+atlas = ExtResource("2_avihw")
+region = Rect2(74, 0, 55, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57xcs"]
+atlas = ExtResource("2_avihw")
+region = Rect2(132, 0, 55, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xed6"]
+atlas = ExtResource("2_avihw")
+region = Rect2(190, 0, 55, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4cxtn"]
+atlas = ExtResource("2_avihw")
+region = Rect2(248, 0, 55, 77)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5a0c5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqfdo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp6iu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_si0ea")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_063vm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjmw6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bfgj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l4hnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojep0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ymff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sjeqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vv386")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykqu2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxhnl")
+}],
+"loop": true,
+"name": &"chase",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8p21b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boley")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57xcs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xed6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4cxtn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xed6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57xcs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boley")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5yj07"]
+radius = 78.2261
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mlp8e"]
+radius = 62.246
+height = 147.581
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xy3m3"]
+radius = 32.6975
+height = 73.3334
+
+[node name="enemy" type="CharacterBody2D"]
+position = Vector2(394, 341)
+scale = Vector2(0.6, 0.734)
+script = ExtResource("1_twupr")
+
+[node name="enemySprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(18.3333, -5.44957)
+scale = Vector2(2.85384, 1.66007)
+sprite_frames = SubResource("SpriteFrames_5a0c5")
+animation = &"chase"
+speed_scale = 0.5
+offset = Vector2(2.08165e-12, 2.08165e-12)
+
+[node name="detectionArea" type="Area2D" parent="enemySprite"]
+position = Vector2(7.77173, -36.8333)
+scale = Vector2(-0.704242, 1.39847)
+
+[node name="enemyVision" type="CollisionShape2D" parent="enemySprite/detectionArea"]
+position = Vector2(14.3527, 26.3383)
+scale = Vector2(1.41, 1.5)
+shape = SubResource("CircleShape2D_5yj07")
+debug_color = Color(0.713726, 0.466667, 0.360784, 0.419608)
+
+[node name="enemyHitbox" type="Area2D" parent="." groups=["enemy"]]
+position = Vector2(-120, 98.0926)
+
+[node name="enemyBody" type="CollisionShape2D" parent="enemyHitbox"]
+position = Vector2(133.333, -83.1062)
+rotation = 1.5708
+scale = Vector2(0.56907, -0.519485)
+shape = SubResource("CapsuleShape2D_mlp8e")
+one_way_collision_margin = 0.0
+debug_color = Color(0.309804, 0.560784, 0.772549, 0.631373)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(13.3333, 16.3488)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_xy3m3")
+
+[node name="hitBoxTimer" type="Timer" parent="."]
+wait_time = 1.5
+
+[connection signal="area_entered" from="enemySprite/detectionArea" to="." method="_on_detection_area_area_entered"]
+[connection signal="area_exited" from="enemySprite/detectionArea" to="." method="_on_detection_area_area_exited"]
+[connection signal="area_entered" from="enemyHitbox" to="." method="_on_enemy_hitbox_area_entered"]
+[connection signal="area_exited" from="enemyHitbox" to="." method="_on_enemy_hitbox_area_exited"]
+[connection signal="timeout" from="hitBoxTimer" to="." method="_on_hit_box_timer_timeout"]
