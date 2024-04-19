@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://jwfd5lvyc0d3"
+path="res://.godot/imported/Stream Loops 2024-03-20_02.ogg-8b93ada0b828462d5e336102ab1d8f13.oggvorbisstr"
+
+[deps]
+
+source_file="res://TempResources/Stream Loops 2024-03-20_02.ogg"
+dest_files=["res://.godot/imported/Stream Loops 2024-03-20_02.ogg-8b93ada0b828462d5e336102ab1d8f13.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

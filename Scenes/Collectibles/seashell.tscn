@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c5ia6tk2p15b3"]
 
 [ext_resource type="Script" path="res://Scenes/Collectibles/seashell.cs" id="1_h6lox"]
-[ext_resource type="Texture2D" uid="uid://c65osrmx14r6w" path="res://TempResources/Seashell_%28Public_Demo%29_Icon.webp" id="2_y6mc0"]
+[ext_resource type="Texture2D" uid="uid://c65osrmx14r6w" path="res://TempResources/Art/Seashell_%28Public_Demo%29_Icon.webp" id="2_y6mc0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o4v4y"]
 radius = 22.0978

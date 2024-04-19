@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://6l2sanxswpqj"]
+
+[ext_resource type="AudioStream" uid="uid://jwfd5lvyc0d3" path="res://TempResources/Stream Loops 2024-03-20_02.ogg" id="1_6vmga"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_6vmga")
+autoplay = true

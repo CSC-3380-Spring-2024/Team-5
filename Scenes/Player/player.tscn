@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://82a20eu1aqyu"]
+[gd_scene load_steps=14 format=3 uid="uid://82a20eu1aqyu"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_oa1ny"]
-[ext_resource type="Texture2D" uid="uid://br7x1nmmy5x3u" path="res://TempResources/icon.svg" id="2_outys"]
+[ext_resource type="Resource" uid="uid://byjkg7xr25v0k" path="res://Inventory/playerInventory.tres" id="2_lra7g"]
+[ext_resource type="Texture2D" uid="uid://br7x1nmmy5x3u" path="res://TempResources/16x16/Sprites/icon.svg" id="2_outys"]
 [ext_resource type="Script" path="res://Scripts/state_machine.gd" id="3_ljpdt"]
 [ext_resource type="Script" path="res://Scenes/Player/PlayerStates/idle_state.gd" id="4_yryu6"]
 [ext_resource type="Script" path="res://Scenes/Player/PlayerStates/walking_state.gd" id="5_4a82o"]
@@ -30,6 +31,7 @@ position = Vector2(389, 312)
 scale = Vector2(1.007, 1)
 script = ExtResource("1_oa1ny")
 dodge_time = 0.3
+inventory = ExtResource("2_lra7g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4.96523, 60)

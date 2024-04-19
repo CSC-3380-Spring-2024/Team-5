@@ -1,5 +1,7 @@
-res://Scenes/Menu
-res://
-res://TempResources
 res://Scenes
+res://TempResources
+res://Inventory
+res://Inventory/items
+res://
+res://Scenes/Menu
 res://TempResources/16x16/Sprites

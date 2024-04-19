@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bur5llc1asa6y"]
 
-[ext_resource type="Theme" uid="uid://b4qps1aut45o2" path="res://TempResources/custombuttons.tres" id="1_3pj46"]
+[ext_resource type="Theme" uid="uid://b4qps1aut45o2" path="res://TempResources/Art/custombuttons.tres" id="1_3pj46"]
 [ext_resource type="Script" path="res://Scenes/options.cs" id="2_okmif"]
 [ext_resource type="FontFile" uid="uid://bv8ny1vjw7q08" path="res://fonts/StayPixelRegular-EaOxl.ttf" id="3_if3u6"]
 

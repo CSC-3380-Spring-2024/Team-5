@@ -8,6 +8,7 @@ var current_health= max_health
 @export var dodge_time: float = 0.5
 @export var dodge_cooldown: float = 3
 @export var dodge_speed_multiplier: float = 2
+@export var inventory: Inventory
 
 var invunerable: bool = false
 var is_dead: bool =false

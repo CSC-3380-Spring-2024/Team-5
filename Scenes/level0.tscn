@@ -1,8 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://b6t21fne0yyx5"]
+[gd_scene load_steps=10 format=3 uid="uid://b6t21fne0yyx5"]
 
+[ext_resource type="Script" path="res://Scenes/level0.gd" id="1_20vud"]
 [ext_resource type="Texture2D" uid="uid://bp1i3eqm5fcr6" path="res://TempResources/16x16/Tilesets/Water+.png" id="1_ot7jw"]
 [ext_resource type="PackedScene" uid="uid://ntva6vdjjb7g" path="res://Scenes/Collectibles/collectibleSpawner.tscn" id="4_mg5es"]
+[ext_resource type="Script" path="res://Scenes/CanvasLayer.gd" id="5_kbr8x"]
 [ext_resource type="PackedScene" uid="uid://b88tyovxykgn" path="res://Scenes/obstacleSpawner.tscn" id="5_nxmaf"]
+[ext_resource type="PackedScene" uid="uid://bb6d5i8pg3h56" path="res://Scenes/inventory_gui.tscn" id="5_px7qn"]
 [ext_resource type="PackedScene" uid="uid://bw41lglmsvfru" path="res://Scenes/Enemies/enemySpawner.tscn" id="6_f5n0i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xffck"]
@@ -172,6 +175,7 @@ sources/0 = SubResource("TileSetAtlasSource_xffck")
 
 [node name="level0" type="Node2D"]
 process_mode = 1
+script = ExtResource("1_20vud")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(345, 245)
@@ -198,3 +202,23 @@ position = Vector2(-755, -666)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(1, 0, 2635, -2, 2634, 2632, -1, 2638, -5, 20, -5, -6, -44, 27, -70, 2714, 2673, 2709, 2696, -125, -65, -121)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("5_kbr8x")
+
+[node name="InventoryGui" parent="CanvasLayer" instance=ExtResource("5_px7qn")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.0
+offset_top = -38.0
+offset_right = 51.0
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
+[connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]

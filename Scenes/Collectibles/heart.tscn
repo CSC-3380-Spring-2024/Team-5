@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bmeg5vaalfra"]
 
 [ext_resource type="Script" path="res://Scenes/Collectibles/heart.cs" id="1_4mwfp"]
-[ext_resource type="Texture2D" uid="uid://dgkt3t4m7l7gn" path="res://TempResources/J-Ur-u.png" id="2_bkby2"]
+[ext_resource type="Texture2D" uid="uid://dgkt3t4m7l7gn" path="res://TempResources/Art/J-Ur-u.png" id="2_bkby2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ybg2w"]
 radius = 23.0217
