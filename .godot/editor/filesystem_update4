@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 res://Scenes/slot_gui.tscn
 res://Inventory/playerInventory.tres
 res://TempResources/Art/custombuttons.tres
@@ -19,7 +20,46 @@ res://Scenes/Enemies/enemySpawner.cs
 res://Scenes/Enemies/enemyStats.cs
 res://Scenes/game_over.cs
 res://Scenes/Menu/MainMenu.cs
+=======
+res://TempResources/custombuttons.tres
+res://Scripts/shader.gdshader
+res://Scenes/Player/player.gdshader
+res://Scenes/Boss.gd
+res://Scenes/FiniteStateMachine.gd
+res://Scenes/Follow.gd
+res://Scenes/Idle.gd
+res://Scenes/Levels/level1Gen.cs
+res://Scenes/Levels/level_2_gen.cs
+res://Scenes/Shoot.gd
+res://scenes/state.gd
+res://Scenes/Player/player.tscn
+res://Scenes/Attacks/AttackSuper.tscn
+res://Scenes/Menu/MainMenu.tscn
+res://Scenes/root.tscn
+res://Scenes/Levels/level_1_gen.tscn
+res://Scenes/level0.tscn
+res://Scenes/Levels/level_2_gen.tscn
+res://Scenes/tile_map.tscn
+res://Scenes/terrain.tscn
+res://Scenes/boss.tscn
+res://Scenes/bullet.tscn
+res://Scenes/Collectibles/heart.cs
+>>>>>>> Stashed changes
 res://Scenes/obstacleSpawner.cs
-res://Scenes/options.cs
+res://Scenes/Enemies/enemySpawner.cs
 res://Scenes/spawner.cs
+<<<<<<< Updated upstream
 res://Scenes/Enemies/jellyfish.cs
+=======
+res://Scenes/Collectibles/collectibleSpawner.cs
+res://Scenes/Enemies/jellyfish.cs
+res://Scenes/Enemies/enemyStats.cs
+res://Scenes/Menu/MainMenu.cs
+res://Scenes/options.cs
+res://Scenes/game_over.cs
+res://Scenes/Levels/proc_gen.cs
+res://Scenes/Collectibles/seashell.cs
+res://Scenes/testscene.tscn
+res://Scenes/bullet.gd
+res://Scenes/Dash.gd
+>>>>>>> Stashed changes

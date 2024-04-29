@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpt68fmmc48gx"]
+
+[ext_resource type="Script" path="res://Scenes/bullet.gd" id="1_awpyf"]
+[ext_resource type="Texture2D" uid="uid://cgm48ljnixbx5" path="res://TempResources/projectile.svg" id="2_wwxne"]
+
+[node name="bullet" type="Area2D"]
+script = ExtResource("1_awpyf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.38419e-07, 2.38419e-07)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_wwxne")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_screen_exited"]

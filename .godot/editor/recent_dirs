@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 res://Scenes/Enemies
 res://TempResources/16x16/Sprites
 res://TempResources
@@ -5,4 +6,13 @@ res://Scenes
 res://Inventory
 res://Inventory/items
 res://
+=======
+res://Scenes
+res://
+res://TempResources/16x16/Sprites
+res://Scenes/Levels
+res://Scenes/Player
+res://TempResources
+res://Scenes/Enemies
+>>>>>>> Stashed changes
 res://Scenes/Menu

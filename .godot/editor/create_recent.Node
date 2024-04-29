@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 AudioStreamPlayer2D
 Panel
 CenterContainer
@@ -20,3 +21,19 @@ ColorRect
 TileMap
 Control
 CanvasLayer
+=======
+State
+state
+ProgressBar
+Timer
+VisibleOnScreenNotifier2D
+Sprite2D
+Area2D
+Label
+RayCast2D
+Node2D
+CollisionShape2D
+AnimatedSprite2D
+CharacterBody2D
+Camera2D
+>>>>>>> Stashed changes

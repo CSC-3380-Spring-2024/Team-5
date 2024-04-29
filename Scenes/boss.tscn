@@ -1,0 +1,96 @@
+[gd_scene load_steps=13 format=3 uid="uid://cdg8k2uffm8ad"]
+
+[ext_resource type="Script" path="res://Scenes/Boss.gd" id="1_h6ju3"]
+[ext_resource type="Texture2D" uid="uid://hm5aell4x8v2" path="res://TempResources/16x16/Sprites/3DS - Regular Show Mordecai and Rigby in 8-Bit Land - Mutant Jellyfish.png" id="2_7gy2i"]
+[ext_resource type="Script" path="res://Scenes/FiniteStateMachine.gd" id="3_a8rnk"]
+[ext_resource type="Script" path="res://Scenes/Idle.gd" id="4_rasay"]
+[ext_resource type="Script" path="res://Scenes/Shoot.gd" id="5_rsl8m"]
+[ext_resource type="Script" path="res://Scenes/Follow.gd" id="6_1nfko"]
+[ext_resource type="Script" path="res://Scenes/Dash.gd" id="7_0spph"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xynh"]
+atlas = ExtResource("2_7gy2i")
+region = Rect2(0, 0, 99, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7a6y"]
+atlas = ExtResource("2_7gy2i")
+region = Rect2(99, 0, 99, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8e72"]
+atlas = ExtResource("2_7gy2i")
+region = Rect2(198, 0, 99, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wum3b"]
+atlas = ExtResource("2_7gy2i")
+region = Rect2(297, 0, 99, 71)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_34dcv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xynh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7a6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8e72")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wum3b")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Boss" type="CharacterBody2D"]
+script = ExtResource("1_h6ju3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(133.25, 80.25)
+scale = Vector2(3.69192, 3.26056)
+sprite_frames = SubResource("SpriteFrames_34dcv")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.745341
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+[node name="Label" type="Label" parent="RayCast2D"]
+offset_left = 103.0
+offset_top = -28.0
+offset_right = 133.0
+offset_bottom = -3.0
+text = "test"
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(100, 2.08165e-12)
+offset_left = 68.0
+offset_top = -79.0
+offset_right = 168.0
+offset_bottom = -27.0
+max_value = 2.0
+value = 2.0
+
+[node name="FiniteStateMachine" type="Node2D" parent="."]
+script = ExtResource("3_a8rnk")
+
+[node name="Idle" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("4_rasay")
+
+[node name="Shoot" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("5_rsl8m")
+
+[node name="Timer" type="Timer" parent="FiniteStateMachine/Shoot"]
+wait_time = 0.75
+
+[node name="Follow" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("6_1nfko")
+
+[node name="Dash" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("7_0spph")
+
+[connection signal="timeout" from="FiniteStateMachine/Shoot/Timer" to="FiniteStateMachine/Shoot" method="_on_timer_timeout"]

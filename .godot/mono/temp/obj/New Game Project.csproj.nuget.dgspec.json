@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "/Users/hussainalhelfi/Downloads/dd/Team-5/New Game Project.csproj": {}
   },
   "projects": {
@@ -12,9 +13,22 @@
         "projectPath": "/Users/hussainalhelfi/Downloads/dd/Team-5/New Game Project.csproj",
         "packagesPath": "/Users/hussainalhelfi/.nuget/packages/",
         "outputPath": "/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/",
+=======
+    "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj": {}
+  },
+  "projects": {
+    "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj",
+        "projectName": "New Game Project",
+        "projectPath": "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj",
+        "packagesPath": "/Users/test/.nuget/packages/",
+        "outputPath": "/Users/test/Documents/GitHub/Team-5/.godot/mono/temp/obj/",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/hussainalhelfi/.nuget/NuGet/NuGet.Config"
+          "/Users/test/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -45,15 +59,15 @@
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             }
           },
           "imports": [
@@ -67,16 +81,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
