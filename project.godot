@@ -11,20 +11,31 @@ config_version=5
 [application]
 
 config/name="DDD"
+config/name_localized={
+"en_US": "English",
+"zh_CN": "Chinese"
+}
 run/main_scene="res://Scenes/Menu/MainMenu.tscn"
-config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
+config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout=""
 
 [autoload]
 
-BgMuisc="*res://Scenes/bg_muisc.tscn"
+SceneTransition="*res://Scenes/scene_transition.tscn"
+BgMuisc="*res://Audio/bg_muisc.tscn"
+MasterSlider="*res://Audio/master_slider.gd"
+DamageNumbers="*res://Scenes/Player/PlayerSubscenes/damage_numbers.gd"
+LevelManager="*res://Scenes/Map/Levels/level_manager.gd"
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
 window/size/initial_position=Vector2i(435, 410)
 window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="res://Assets/PlayerAssets/cursor.svg"
 
 [dotnet]
 
@@ -61,19 +72,28 @@ dodge={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"echo":false,"script":null)
 ]
 }
-toggle_inventory={
+attack={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":73,"key_label":0,"unicode":105,"echo":false,"script":null)
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(405, 20),"global_position":Vector2(409, 61),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
-test={
+esc={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
 ]
 }
+ui_pause={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://language/localization.en.translation", "res://language/localization.zh.translation")
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.301961, 0.301961, 0.301961, 1)

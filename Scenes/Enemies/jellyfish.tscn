@@ -1,7 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://cfmrwr4w530tq"]
+[gd_scene load_steps=27 format=3 uid="uid://cfmrwr4w530tq"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/jellyfish.cs" id="1_twupr"]
-[ext_resource type="Texture2D" path="res://TempResources/16x16/Sprites/3DS - Regular Show Mordecai and Rigby in 8-Bit Land - Mutant Jellyfish.png" id="2_avihw"]
+[ext_resource type="Texture2D" uid="uid://hm5aell4x8v2" path="res://Assets/16x16/Sprites/3DS - Regular Show Mordecai and Rigby in 8-Bit Land - Mutant Jellyfish.png" id="2_avihw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pqfdo"]
 atlas = ExtResource("2_avihw")
@@ -157,7 +157,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5yj07"]
-radius = 78.2261
+radius = 221.839
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mlp8e"]
 radius = 62.246
@@ -167,12 +167,20 @@ height = 147.581
 radius = 32.6975
 height = 73.3334
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pxmj1"]
+bg_color = Color(0.00392157, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1m8nh"]
+bg_color = Color(0.921569, 0.113725, 0.113725, 1)
+
 [node name="enemy" type="CharacterBody2D"]
+z_index = 3
+y_sort_enabled = true
 position = Vector2(394, 341)
 scale = Vector2(0.6, 0.734)
 script = ExtResource("1_twupr")
 
-[node name="enemySprite" type="AnimatedSprite2D" parent="."]
+[node name="jellyfishSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(18.3333, -5.44957)
 scale = Vector2(2.85384, 1.66007)
 sprite_frames = SubResource("SpriteFrames_5a0c5")
@@ -180,13 +188,13 @@ animation = &"chase"
 speed_scale = 0.5
 offset = Vector2(2.08165e-12, 2.08165e-12)
 
-[node name="detectionArea" type="Area2D" parent="enemySprite"]
+[node name="detectionArea" type="Area2D" parent="jellyfishSprite"]
 position = Vector2(7.77173, -36.8333)
 scale = Vector2(-0.704242, 1.39847)
 
-[node name="enemyVision" type="CollisionShape2D" parent="enemySprite/detectionArea"]
-position = Vector2(14.3527, 26.3383)
-scale = Vector2(1.41, 1.5)
+[node name="enemyVision" type="CollisionShape2D" parent="jellyfishSprite/detectionArea"]
+position = Vector2(12.6941, 36.9015)
+scale = Vector2(1.2, 1.2)
 shape = SubResource("CircleShape2D_5yj07")
 debug_color = Color(0.713726, 0.466667, 0.360784, 0.419608)
 
@@ -209,8 +217,18 @@ shape = SubResource("CapsuleShape2D_xy3m3")
 [node name="hitBoxTimer" type="Timer" parent="."]
 wait_time = 1.5
 
-[connection signal="area_entered" from="enemySprite/detectionArea" to="." method="_on_detection_area_area_entered"]
-[connection signal="area_exited" from="enemySprite/detectionArea" to="." method="_on_detection_area_area_exited"]
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = -21.6667
+offset_top = 53.1335
+offset_right = -13.6667
+offset_bottom = 142.134
+scale = Vector2(8.82032, 0.0609859)
+theme_override_styles/background = SubResource("StyleBoxFlat_pxmj1")
+theme_override_styles/fill = SubResource("StyleBoxFlat_1m8nh")
+show_percentage = false
+
+[connection signal="area_entered" from="jellyfishSprite/detectionArea" to="." method="_on_detection_area_area_entered"]
+[connection signal="area_exited" from="jellyfishSprite/detectionArea" to="." method="_on_detection_area_area_exited"]
 [connection signal="area_entered" from="enemyHitbox" to="." method="_on_enemy_hitbox_area_entered"]
 [connection signal="area_exited" from="enemyHitbox" to="." method="_on_enemy_hitbox_area_exited"]
 [connection signal="timeout" from="hitBoxTimer" to="." method="_on_hit_box_timer_timeout"]

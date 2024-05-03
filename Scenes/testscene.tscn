@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxfci6o78anyg"]
-
-[ext_resource type="PackedScene" uid="uid://cdg8k2uffm8ad" path="res://Scenes/boss.tscn" id="1_oevhu"]
-
-[node name="testscene" type="Node2D"]
-
-[node name="Boss" parent="." instance=ExtResource("1_oevhu")]

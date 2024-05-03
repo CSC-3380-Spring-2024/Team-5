@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://r4h3rl71tfg6"]
+
+[ext_resource type="PackedScene" uid="uid://bk5b17rwnpv5s" path="res://Scenes/Weapons/weapon_base.tscn" id="1_l4vgv"]
+[ext_resource type="Script" path="res://Scenes/Weapons/Types/cannon.gd" id="2_0dxyt"]
+
+[node name="Cannon" instance=ExtResource("1_l4vgv")]
+script = ExtResource("2_0dxyt")

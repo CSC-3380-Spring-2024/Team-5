@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://d07kdjiw2eb0r"]
+
+[ext_resource type="Shader" path="res://Scripts/shader.gdshader" id="1_iwf11"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nuq8i"]
+shader = ExtResource("1_iwf11")
+shader_parameter/time = null
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_l3f4p"]
+noise_type = 4
+frequency = 0.4012
+offset = Vector3(9.15, 0, 0)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_so3by"]
+seamless = true
+normalize = false
+noise = SubResource("FastNoiseLite_l3f4p")
+
+[node name="Node2D" type="Node2D"]
+top_level = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 7
+y_sort_enabled = true
+material = SubResource("ShaderMaterial_nuq8i")
+position = Vector2(326, 222)
+scale = Vector2(1.29297, 0.894531)
+texture = SubResource("NoiseTexture2D_so3by")

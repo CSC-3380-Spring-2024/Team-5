@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://djtj54lsqcpt6"]
+
+[ext_resource type="FontFile" uid="uid://bv8ny1vjw7q08" path="res://Fonts/StayPixelRegular-EaOxl.ttf" id="1_glocy"]
+[ext_resource type="Script" path="res://language/language_setting.gd" id="1_hhbph"]
+[ext_resource type="Theme" uid="uid://bg8wle0jnrveu" path="res://Assets/Effects&Menu/custombuttons.tres" id="2_d6oby"]
+
+
+[sub_resource type="Theme" id="Theme_qatqf"]
+
+[node name="Language Setting" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hhbph")
+
+[node name="BG Color" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0784314, 0.156863, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_qatqf")
+theme_override_fonts/font = ExtResource("1_glocy")
+theme_override_font_sizes/font_size = 96
+text = "Language"
+
+[node name="ButtonsVbox" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+theme = ExtResource("2_d6oby")
+
+[node name="OptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/ButtonsVbox"]
+layout_mode = 2
+auto_translate = false
+theme_override_fonts/font = ExtResource("1_glocy")
+theme_override_font_sizes/font_size = 64
+item_count = 2
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "Chinese/中文"
+popup/item_1/id = 1
+
+[node name="Return" type="Button" parent="MarginContainer/VBoxContainer/ButtonsVbox"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_glocy")
+theme_override_font_sizes/font_size = 64
+text = "Return"
+
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/ButtonsVbox/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonsVbox/Return" to="." method="_on_return_pressed"]

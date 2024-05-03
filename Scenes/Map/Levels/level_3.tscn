@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://du4hj66eu78wk"]
+
+[ext_resource type="PackedScene" uid="uid://82a20eu1aqyu" path="res://Scenes/Player/player.tscn" id="1_txy5w"]
+[ext_resource type="PackedScene" uid="uid://c1ndy7ps54xr7" path="res://Scenes/Map/Levels/level_3_gen.tscn" id="2_xbogi"]
+[ext_resource type="PackedScene" uid="uid://c844kqesrljy5" path="res://Scenes/Map/cave.tscn" id="3_2kpp6"]
+[ext_resource type="PackedScene" uid="uid://bw41lglmsvfru" path="res://Scenes/Enemies/enemySpawner.tscn" id="4_d7lo7"]
+[ext_resource type="PackedScene" uid="uid://d07kdjiw2eb0r" path="res://Scenes/shader.tscn" id="5_ybj7i"]
+[ext_resource type="PackedScene" uid="uid://brgeaqsabhqad" path="res://Scenes/Menu/pause_menu.tscn" id="6_la111"]
+
+[node name="level" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_txy5w")]
+position = Vector2(2156, 833)
+
+[node name="level_3_gen" parent="." instance=ExtResource("2_xbogi")]
+
+[node name="cave" parent="." instance=ExtResource("3_2kpp6")]
+position = Vector2(2000, 500)
+
+[node name="enemySpawner" parent="." instance=ExtResource("4_d7lo7")]
+position = Vector2(2156, 863)
+
+[node name="Node2D" parent="." instance=ExtResource("5_ybj7i")]
+z_index = 8
+y_sort_enabled = true
+position = Vector2(-489, -811)
+scale = Vector2(12, 12)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("6_la111")]
+visible = false

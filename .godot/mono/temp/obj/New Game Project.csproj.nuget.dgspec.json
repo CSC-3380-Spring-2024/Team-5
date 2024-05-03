@@ -1,34 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "/Users/hussainalhelfi/Downloads/dd/Team-5/New Game Project.csproj": {}
+    "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj": {}
   },
   "projects": {
-    "/Users/hussainalhelfi/Downloads/dd/Team-5/New Game Project.csproj": {
+    "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hussainalhelfi/Downloads/dd/Team-5/New Game Project.csproj",
+        "projectUniqueName": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj",
         "projectName": "New Game Project",
-        "projectPath": "/Users/hussainalhelfi/Downloads/dd/Team-5/New Game Project.csproj",
-        "packagesPath": "/Users/hussainalhelfi/.nuget/packages/",
-        "outputPath": "/Users/hussainalhelfi/Downloads/dd/Team-5/.godot/mono/temp/obj/",
-=======
-    "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj": {}
-  },
-  "projects": {
-    "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj",
-        "projectName": "New Game Project",
-        "projectPath": "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj",
-        "packagesPath": "/Users/test/.nuget/packages/",
-        "outputPath": "/Users/test/Documents/GitHub/Team-5/.godot/mono/temp/obj/",
->>>>>>> Stashed changes
+        "projectPath": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj",
+        "packagesPath": "C:\\Users\\No Thanks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/test/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\No Thanks\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -59,15 +45,15 @@
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.2.1, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.2.1, )"
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.2.1, )"
             }
           },
           "imports": [
@@ -81,12 +67,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.27, 6.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.27, 6.0.27]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.27, 6.0.27]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b88tyovxykgn"]
+
+[ext_resource type="Script" path="res://Scenes/Map/obstacleSpawner.cs" id="1_hwsya"]
+
+
+[node name="obstacleSpawner" type="Node2D"]
+script = ExtResource("1_hwsya")

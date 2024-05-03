@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cs7ahhfg34b8a"]
+
+[ext_resource type="PackedScene" uid="uid://bk5b17rwnpv5s" path="res://Scenes/Weapons/weapon_base.tscn" id="1_6nefy"]
+[ext_resource type="Script" path="res://Scenes/Weapons/Types/pulse.gd" id="2_xsh44"]
+
+[node name="Pulse" instance=ExtResource("1_6nefy")]
+script = ExtResource("2_xsh44")
+max_shots = 3
+
+[node name="PulseTimer" type="Timer" parent="." index="3"]
+
+[connection signal="timeout" from="PulseTimer" to="." method="_on_pulse_timer_timeout"]

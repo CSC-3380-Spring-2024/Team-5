@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dya0e2aqexbui"]
+
+[ext_resource type="Script" path="res://Scenes/Map/Levels/level1Gen.cs" id="1_4j3ss"]
+
+[node name="level1Gen" type="Node2D"]
+scale = Vector2(3, 3)
+script = ExtResource("1_4j3ss")

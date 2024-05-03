@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chqtvj1d3ay2u"
+path="res://.godot/imported/Mario Fall (Waa) - Sound Effect (HD).mp3-f8b1588f38d73e388ec363f2934570cc.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/Mario Fall (Waa) - Sound Effect (HD).mp3"
+dest_files=["res://.godot/imported/Mario Fall (Waa) - Sound Effect (HD).mp3-f8b1588f38d73e388ec363f2934570cc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
