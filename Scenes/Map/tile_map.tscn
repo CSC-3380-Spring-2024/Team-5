@@ -1,9 +1,9 @@
 [gd_scene load_steps=4 format=3 uid="uid://b1sru4egl1h6b"]
 
-[ext_resource type="Texture2D" uid="uid://cv7vxmkeg2ykm" path="res://Assets/16x16/Tilesets/spritesheet.png" id="1_6e1ks"]
+[ext_resource type="Texture2D" path="res://TempResources/16x16/Tilesets/spritesheet.png" id="1_8p17c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ljm0"]
-texture = ExtResource("1_6e1ks")
+texture = ExtResource("1_8p17c")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)

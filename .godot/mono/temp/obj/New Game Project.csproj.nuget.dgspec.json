@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj": {}
+    "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj": {
+    "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj",
+        "projectUniqueName": "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj",
         "projectName": "New Game Project",
-        "projectPath": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj",
-        "packagesPath": "C:\\Users\\No Thanks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "/Users/test/Documents/GitHub/Team-5/New Game Project.csproj",
+        "packagesPath": "/Users/test/.nuget/packages/",
+        "outputPath": "/Users/test/Documents/GitHub/Team-5/.godot/mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\No Thanks\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/test/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -45,15 +45,15 @@
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             }
           },
           "imports": [
@@ -67,26 +67,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bv8ny1vjw7q08"
-path="res://.godot/imported/StayPixelRegular-EaOxl.ttf-b9ad125f943f49d9df9b598f612114f5.fontdata"
+path="res://.godot/imported/StayPixelRegular-EaOxl.ttf-e5209a4249525c542642dfebd5180bed.fontdata"
 
 [deps]
 
-source_file="res://Fonts/StayPixelRegular-EaOxl.ttf"
-dest_files=["res://.godot/imported/StayPixelRegular-EaOxl.ttf-b9ad125f943f49d9df9b598f612114f5.fontdata"]
+source_file="res://fonts/StayPixelRegular-EaOxl.ttf"
+dest_files=["res://.godot/imported/StayPixelRegular-EaOxl.ttf-e5209a4249525c542642dfebd5180bed.fontdata"]
 
 [params]
 

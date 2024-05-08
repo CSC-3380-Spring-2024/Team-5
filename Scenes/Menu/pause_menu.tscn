@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/Menu/pause_menu.gd" id="1_a8dcj"]
 [ext_resource type="Script" path="res://Audio/master_slider.gd" id="2_1uce7"]
-[ext_resource type="FontFile" uid="uid://bv8ny1vjw7q08" path="res://Fonts/StayPixelRegular-EaOxl.ttf" id="2_xfxte"]
-
+[ext_resource type="FontFile" uid="uid://bv8ny1vjw7q08" path="res://fonts/StayPixelRegular-EaOxl.ttf" id="2_xfxte"]
 
 [node name="PauseMenu" type="Control"]
 process_mode = 3

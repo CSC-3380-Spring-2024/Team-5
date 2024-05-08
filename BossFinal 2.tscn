@@ -1,0 +1,102 @@
+[gd_scene load_steps=14 format=3 uid="uid://dv0j6tn5hqwn7"]
+
+[ext_resource type="Script" path="res://Boss/BossFinal.gd" id="1_nrds8"]
+[ext_resource type="Texture2D" uid="uid://bx6tj7gs3v2u2" path="res://TempResources/craftpix-net-760946-free-underwater-enemies-pixel-art-character-pack/4/Idle.png" id="1_tnu4c"]
+[ext_resource type="Script" path="res://Boss/FiniteStateMachine.gd" id="2_tg3im"]
+[ext_resource type="Script" path="res://Boss/IdleBoss.gd" id="4_6j0qk"]
+[ext_resource type="Script" path="res://Boss/ShootBoss.gd" id="5_5fnfn"]
+[ext_resource type="PackedScene" uid="uid://esruk3c3ltv" path="res://bullet_boss.tscn" id="6_l61hp"]
+[ext_resource type="Script" path="res://Boss/FollowBoss.gd" id="6_mc7x1"]
+[ext_resource type="Script" path="res://Boss/DashBoss.gd" id="8_c3n47"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjiha"]
+atlas = ExtResource("1_tnu4c")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48o2y"]
+atlas = ExtResource("1_tnu4c")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnby1"]
+atlas = ExtResource("1_tnu4c")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmwtj"]
+atlas = ExtResource("1_tnu4c")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iogjv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sjiha")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48o2y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnby1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pmwtj")
+}],
+"loop": true,
+"name": &"IdleBoss",
+"speed": 5.0
+}]
+
+[node name="bossFinal" type="CharacterBody2D"]
+script = ExtResource("1_nrds8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(12, 21)
+scale = Vector2(2.33333, 2.14583)
+sprite_frames = SubResource("SpriteFrames_iogjv")
+animation = &"IdleBoss"
+autoplay = "IdleBoss"
+frame = 1
+frame_progress = 0.918752
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="debug" type="Label" parent="."]
+offset_left = -32.0
+offset_top = -52.0
+offset_right = 6.0
+offset_bottom = -29.0
+text = "TEXT"
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -55.0
+offset_top = -78.0
+offset_right = 37.0
+offset_bottom = -51.0
+max_value = 2.0
+value = 2.0
+
+[node name="FiniteStateMachine" type="Node2D" parent="."]
+script = ExtResource("2_tg3im")
+
+[node name="IdleBoss" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("4_6j0qk")
+
+[node name="ShootBoss" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("5_5fnfn")
+bullet_boss_node = ExtResource("6_l61hp")
+
+[node name="Timer" type="Timer" parent="FiniteStateMachine/ShootBoss"]
+wait_time = 0.75
+
+[node name="FollowBoss" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("6_mc7x1")
+
+[node name="DashBoss" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("8_c3n47")
+
+[node name="Timer" type="Timer" parent="FiniteStateMachine/DashBoss"]
+wait_time = 1.5
+
+[connection signal="timeout" from="FiniteStateMachine/ShootBoss/Timer" to="FiniteStateMachine/ShootBoss" method="_on_timer_timeout"]
+[connection signal="timeout" from="FiniteStateMachine/DashBoss/Timer" to="FiniteStateMachine/DashBoss" method="_on_timer_timeout"]

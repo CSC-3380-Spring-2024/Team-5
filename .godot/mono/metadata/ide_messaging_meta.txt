@@ -1,2 +1,7 @@
+<<<<<<< Updated upstream
 ﻿59536
 C:/Users/No Thanks/Godot/Godot_v4.2.1-stable_mono_win64.exe
+=======
+﻿54296
+/private/var/folders/v6/hd0mbb2526g81dh5bfg9f8080000gp/T/AppTranslocation/67978540-ED67-444A-AD9A-4AA187F4B42A/d/Godot_mono.app/Contents/MacOS/Godot
+>>>>>>> Stashed changes

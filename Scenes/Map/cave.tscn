@@ -1,42 +1,42 @@
 [gd_scene load_steps=14 format=3 uid="uid://c844kqesrljy5"]
 
 [ext_resource type="Script" path="res://Scenes/Map/cave.gd" id="1_c0bpk"]
-[ext_resource type="Texture2D" uid="uid://c6v6fc7f1qt6r" path="res://Assets/LevelAssets/image-removebg-preview-4.png" id="2_cudps"]
+[ext_resource type="Texture2D" path="res://TempResources/image-removebg-preview-4.png" id="3_76mqf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4jo8t"]
-atlas = ExtResource("2_cudps")
+atlas = ExtResource("3_76mqf")
 region = Rect2(15, 0, 178, 151)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v74vo"]
-atlas = ExtResource("2_cudps")
+atlas = ExtResource("3_76mqf")
 region = Rect2(193, 0, 178, 151)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vya70"]
-atlas = ExtResource("2_cudps")
+atlas = ExtResource("3_76mqf")
 region = Rect2(371, 0, 178, 151)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v682s"]
-atlas = ExtResource("2_cudps")
+atlas = ExtResource("3_76mqf")
 region = Rect2(15, 151, 178, 151)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m35jr"]
-atlas = ExtResource("2_cudps")
+atlas = ExtResource("3_76mqf")
 region = Rect2(193, 151, 178, 151)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_daqjh"]
-atlas = ExtResource("2_cudps")
+atlas = ExtResource("3_76mqf")
 region = Rect2(371, 151, 178, 151)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yfj0y"]
-atlas = ExtResource("2_cudps")
+atlas = ExtResource("3_76mqf")
 region = Rect2(15, 302, 178, 151)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_308vs"]
-atlas = ExtResource("2_cudps")
+atlas = ExtResource("3_76mqf")
 region = Rect2(193, 302, 178, 151)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7wvi0"]
-atlas = ExtResource("2_cudps")
+atlas = ExtResource("3_76mqf")
 region = Rect2(371, 302, 178, 151)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3clm8"]
