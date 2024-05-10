@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=14 format=3 uid="uid://dv0j6tn5hqwn7"]
 
 [ext_resource type="Script" path="res://Boss/BossFinal.gd" id="1_nrds8"]
@@ -6,6 +7,16 @@
 [ext_resource type="Script" path="res://Boss/IdleBoss.gd" id="4_6j0qk"]
 [ext_resource type="Script" path="res://Boss/ShootBoss.gd" id="5_5fnfn"]
 [ext_resource type="PackedScene" uid="uid://esruk3c3ltv" path="res://bullet_boss.tscn" id="6_l61hp"]
+=======
+[gd_scene load_steps=14 format=3 uid="uid://cinppbx7brn7f"]
+
+[ext_resource type="Script" path="res://Boss/BossFinal.gd" id="1_nrds8"]
+[ext_resource type="Texture2D" path="res://TempResources/craftpix-net-760946-free-underwater-enemies-pixel-art-character-pack/4/Idle.png" id="1_tnu4c"]
+[ext_resource type="Script" path="res://Boss/FiniteStateMachine.gd" id="2_tg3im"]
+[ext_resource type="Script" path="res://Boss/IdleBoss.gd" id="4_6j0qk"]
+[ext_resource type="Script" path="res://Boss/ShootBoss.gd" id="5_5fnfn"]
+[ext_resource type="PackedScene" uid="uid://c5xadkv0e3vix" path="res://bullet_boss.tscn" id="6_l61hp"]
+>>>>>>> Stashed changes
 [ext_resource type="Script" path="res://Boss/FollowBoss.gd" id="6_mc7x1"]
 [ext_resource type="Script" path="res://Boss/DashBoss.gd" id="8_c3n47"]
 
@@ -49,7 +60,11 @@ animations = [{
 script = ExtResource("1_nrds8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+<<<<<<< Updated upstream
 position = Vector2(12, 21)
+=======
+position = Vector2(5.99999, 12)
+>>>>>>> Stashed changes
 scale = Vector2(2.33333, 2.14583)
 sprite_frames = SubResource("SpriteFrames_iogjv")
 animation = &"IdleBoss"

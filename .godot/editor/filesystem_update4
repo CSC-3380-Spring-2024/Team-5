@@ -52,3 +52,6 @@ res://Scenes/Enemies/enemySpawner.cs
 res://Scenes/Map/spawner.cs
 res://Scenes/Map/obstacleSpawner.cs
 res://Scenes/Map/Levels/level_2_gen.cs
+res://Assets/custombuttons.tres
+res://Scenes/Enemies/enemyManager.cs
+res://Scenes/Enemies/enemy_spawner.gd

@@ -1,12 +1,25 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://q4glufg4ld82"]
 
 [ext_resource type="PackedScene" uid="uid://dv0j6tn5hqwn7" path="res://BossFinal.tscn" id="1_v21y2"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://dmjnaayhhhqhr"]
+
+[ext_resource type="PackedScene" uid="uid://cinppbx7brn7f" path="res://BossFinal.tscn" id="1_v21y2"]
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://82a20eu1aqyu" path="res://Scenes/Player/player.tscn" id="2_217xj"]
 
 [node name="TestScene" type="Node2D"]
 
 [node name="bossFinal" parent="." instance=ExtResource("1_v21y2")]
+<<<<<<< Updated upstream
 position = Vector2(352, 259)
 
 [node name="Player" parent="." instance=ExtResource("2_217xj")]
+=======
+position = Vector2(-55, 87)
+
+[node name="Player" parent="." instance=ExtResource("2_217xj")]
+visible = false
+>>>>>>> Stashed changes
 position = Vector2(190, 159)

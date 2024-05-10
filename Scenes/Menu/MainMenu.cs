@@ -32,6 +32,7 @@ public partial class MainMenu : Control
 		GetTree().Quit();
 	}
 }
+<<<<<<< Updated upstream
 
 
 
@@ -41,3 +42,5 @@ public partial class MainMenu : Control
 
 
 
+=======
+>>>>>>> Stashed changes

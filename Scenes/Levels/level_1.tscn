@@ -1,14 +1,25 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=10 format=3 uid="uid://b6t21fne0yyx5"]
+=======
+[gd_scene load_steps=9 format=3 uid="uid://b6t21fne0yyx5"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://Scenes/Levels/level_manager.gd" id="1_4ww4k"]
 [ext_resource type="PackedScene" uid="uid://82a20eu1aqyu" path="res://Scenes/Player/player.tscn" id="1_hcy1s"]
 [ext_resource type="PackedScene" path="res://Scenes/Levels/level_1_gen.tscn" id="1_hl2b8"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://c844kqesrljy5" path="res://Scenes/Map/cave.tscn" id="3_nd8vb"]
+=======
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://b2nsnqbndwddg" path="res://Scenes/Collectibles/collectibleSpawner.tscn" id="4_mg5es"]
 [ext_resource type="PackedScene" uid="uid://b47tt78bshp0b" path="res://Scenes/Map/ocean_shader.tscn" id="6_5ppjd"]
 [ext_resource type="PackedScene" uid="uid://bfjx7xoabxd71" path="res://Scenes/Enemies/enemySpawner.tscn" id="6_f5n0i"]
 [ext_resource type="PackedScene" uid="uid://brgeaqsabhqad" path="res://Scenes/Menu/pause_menu.tscn" id="7_u4kev"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://dv0j6tn5hqwn7" path="res://BossFinal.tscn" id="9_2js1f"]
+=======
+[ext_resource type="PackedScene" uid="uid://cinppbx7brn7f" path="res://BossFinal.tscn" id="9_2js1f"]
+>>>>>>> Stashed changes
 
 [node name="level" type="Node2D"]
 process_mode = 1
@@ -37,4 +48,7 @@ visible = false
 
 [node name="bossFinal" parent="." instance=ExtResource("9_2js1f")]
 visible = false
+<<<<<<< Updated upstream
 position = Vector2(528, -169)
+=======
+>>>>>>> Stashed changes

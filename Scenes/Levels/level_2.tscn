@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=9 format=3 uid="uid://djvk01nikfwqn"]
+=======
+[gd_scene load_steps=8 format=3 uid="uid://djvk01nikfwqn"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://Scenes/Levels/level_manager.gd" id="1_11ju2"]
 [ext_resource type="PackedScene" uid="uid://cflqs2ufnjbla" path="res://Scenes/Levels/level_2_gen.tscn" id="1_42rxj"]

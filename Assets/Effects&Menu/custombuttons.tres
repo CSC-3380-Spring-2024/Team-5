@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream:Assets/Effects&Menu/custombuttons.tres
 [gd_resource type="Theme" load_steps=7 format=3 uid="uid://bg8wle0jnrveu"]
+=======
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://btn4ji6te48wh"]
+>>>>>>> Stashed changes:Assets/custombuttons.tres
 
 [ext_resource type="FontFile" uid="uid://bwr4dvi3aclsw" path="res://Fonts/NotoSans-Regular.ttf" id="1_4xk7n"]
 [ext_resource type="FontFile" uid="uid://dgdwkoywnpnat" path="res://Fonts/NotoSansSC-Regular.ttf" id="2_qxg26"]

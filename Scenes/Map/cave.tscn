@@ -1,7 +1,15 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=14 format=3 uid="uid://c844kqesrljy5"]
 
 [ext_resource type="Script" path="res://Scenes/Map/cave.gd" id="1_c0bpk"]
 [ext_resource type="Texture2D" path="res://TempResources/image-removebg-preview-4.png" id="3_76mqf"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://c844kqesrljy5"]
+
+[ext_resource type="Script" path="res://Scenes/Map/cave.gd" id="1_c0bpk"]
+[ext_resource type="Texture2D" uid="uid://c6v6fc7f1qt6r" path="res://Assets/LevelAssets/image-removebg-preview-4.png" id="3_76mqf"]
+[ext_resource type="PackedScene" uid="uid://cinppbx7brn7f" path="res://BossFinal.tscn" id="3_w31ob"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4jo8t"]
 atlas = ExtResource("3_76mqf")
@@ -92,5 +100,7 @@ frame_progress = 0.909189
 position = Vector2(-3, -4)
 rotation = 1.5708
 shape = SubResource("CircleShape2D_nsnja")
+
+[node name="bossFinal" parent="." instance=ExtResource("3_w31ob")]
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

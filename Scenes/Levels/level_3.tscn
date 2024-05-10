@@ -1,0 +1,31 @@
+[gd_scene load_steps=8 format=3 uid="uid://dyn315fxaohlo"]
+
+[ext_resource type="Script" path="res://Scenes/Levels/level_manager.gd" id="1_scl6o"]
+[ext_resource type="PackedScene" uid="uid://82a20eu1aqyu" path="res://Scenes/Player/player.tscn" id="1_v5ohp"]
+[ext_resource type="PackedScene" path="res://Scenes/Levels/level_3_gen.tscn" id="2_chdpw"]
+[ext_resource type="PackedScene" uid="uid://bfjx7xoabxd71" path="res://Scenes/Enemies/enemySpawner.tscn" id="4_p42sg"]
+[ext_resource type="PackedScene" uid="uid://b47tt78bshp0b" path="res://Scenes/Map/ocean_shader.tscn" id="5_cm8c1"]
+[ext_resource type="PackedScene" uid="uid://brgeaqsabhqad" path="res://Scenes/Menu/pause_menu.tscn" id="6_rcmi0"]
+[ext_resource type="PackedScene" uid="uid://b2nsnqbndwddg" path="res://Scenes/Collectibles/collectibleSpawner.tscn" id="7_fafys"]
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_scl6o")
+
+[node name="Player" parent="." instance=ExtResource("1_v5ohp")]
+position = Vector2(2156, 833)
+
+[node name="level_3_gen" parent="." instance=ExtResource("2_chdpw")]
+
+[node name="enemySpawner" parent="." instance=ExtResource("4_p42sg")]
+
+[node name="collectibleSpawner" parent="." instance=ExtResource("7_fafys")]
+position = Vector2(2156, 863)
+
+[node name="oceanShader" parent="." instance=ExtResource("5_cm8c1")]
+position = Vector2(-489, -811)
+scale = Vector2(20, 12)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("6_rcmi0")]
+visible = false

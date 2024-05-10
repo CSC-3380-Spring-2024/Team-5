@@ -1,7 +1,14 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://esruk3c3ltv"]
 
 [ext_resource type="Script" path="res://Boss/bulletBoss.gd" id="1_rdd31"]
 [ext_resource type="Texture2D" uid="uid://d37p8gdlwa76n" path="res://TempResources/craftpix-net-760946-free-underwater-enemies-pixel-art-character-pack/4/Projectile.png" id="2_42klp"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://c5xadkv0e3vix"]
+
+[ext_resource type="Script" path="res://Boss/bulletBoss.gd" id="1_rdd31"]
+[ext_resource type="Texture2D" path="res://TempResources/craftpix-net-760946-free-underwater-enemies-pixel-art-character-pack/4/Projectile.png" id="2_42klp"]
+>>>>>>> Stashed changes
 
 [node name="bulletBoss" type="Area2D"]
 script = ExtResource("1_rdd31")
