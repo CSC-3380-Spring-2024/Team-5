@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hussainalhelfi/Downloads/boss/Team-5/Assets/Menu.csproj": {}
+    "/Users/hussainalhelfi/Downloads/wndwdq/Team-5/Assets/Menu.csproj": {}
   },
   "projects": {
-    "/Users/hussainalhelfi/Downloads/boss/Team-5/Assets/Menu.csproj": {
+    "/Users/hussainalhelfi/Downloads/wndwdq/Team-5/Assets/Menu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hussainalhelfi/Downloads/boss/Team-5/Assets/Menu.csproj",
+        "projectUniqueName": "/Users/hussainalhelfi/Downloads/wndwdq/Team-5/Assets/Menu.csproj",
         "projectName": "Menu",
-        "projectPath": "/Users/hussainalhelfi/Downloads/boss/Team-5/Assets/Menu.csproj",
+        "projectPath": "/Users/hussainalhelfi/Downloads/wndwdq/Team-5/Assets/Menu.csproj",
         "packagesPath": "/Users/hussainalhelfi/.nuget/packages/",
-        "outputPath": "/Users/hussainalhelfi/Downloads/boss/Team-5/Assets/.godot/mono/temp/obj/",
+        "outputPath": "/Users/hussainalhelfi/Downloads/wndwdq/Team-5/Assets/.godot/mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hussainalhelfi/.nuget/NuGet/NuGet.Config"

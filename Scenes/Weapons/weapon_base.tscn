@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bk5b17rwnpv5s"]
 
 [ext_resource type="Script" path="res://Scenes/Weapons/weapons_base.gd" id="1_6xqbp"]
-[ext_resource type="AudioStream" path="res://TempResources/bubble-pop-sound-effect_udV2fZVu.mp3" id="2_hxmf2"]
+[ext_resource type="AudioStream" uid="uid://c2w6gtgqoqtoe" path="res://Assets/SFX/bubble-pop-sound-effect_udV2fZVu.mp3" id="2_3yioq"]
 
 [node name="WeaponBase" type="Node2D"]
 script = ExtResource("1_6xqbp")
@@ -9,7 +9,7 @@ script = ExtResource("1_6xqbp")
 [node name="sfx_shoot" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-3, 0)
 scale = Vector2(2.59076, 2.44231)
-stream = ExtResource("2_hxmf2")
+stream = ExtResource("2_3yioq")
 
 [node name="WeaponCooldown" type="Timer" parent="."]
 

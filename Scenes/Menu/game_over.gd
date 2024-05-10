@@ -10,12 +10,12 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_restart_pressed():
+func _on_restart_pressed()-> void:
 	LevelManager.set_current_level(1)
 	get_tree().change_scene_to_file("res://Scenes/Levels/level_1.tscn")
 
 
-func _on_return_home_pressed():
+func _on_return_home_pressed()-> void:
 	LevelManager.set_current_level(1)
 	get_tree().change_scene_to_file("res://Scenes/Menu/MainMenu.tscn")
 	

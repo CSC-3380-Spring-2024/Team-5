@@ -315,13 +315,11 @@ script = ExtResource("6_wxmbt")
 position = Vector2(-1.9861, -5)
 scale = Vector2(2.59076, 2.44231)
 stream = ExtResource("7_j4p1d")
-bus = &"SFX"
 
 [node name="sfx_take_damage" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-1.9861, -5)
 scale = Vector2(2.59076, 2.44231)
 stream = ExtResource("8_226lu")
-bus = &"SFX"
 
 [node name="DamageNumbersOrigin" type="Node2D" parent="."]
 position = Vector2(0, -55)

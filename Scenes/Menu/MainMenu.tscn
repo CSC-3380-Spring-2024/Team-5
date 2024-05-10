@@ -3,8 +3,8 @@
 [ext_resource type="Shader" path="res://Scenes/Menu/scrolling.gdshader" id="2_1bwg8"]
 [ext_resource type="Script" path="res://Scenes/Menu/MainMenu.cs" id="2_1h5yw"]
 [ext_resource type="FontFile" uid="uid://bv8ny1vjw7q08" path="res://fonts/StayPixelRegular-EaOxl.ttf" id="2_k8hj5"]
-[ext_resource type="Theme" uid="uid://iv2xraknp6pu" path="res://Assets/custombuttons.tres" id="3_spsce"]
-[ext_resource type="Texture2D" path="res://Assets/b978c3af01002c418a6b38ffe5caf323.png" id="3_xykr3"]
+[ext_resource type="Theme" uid="uid://l4e0cnupcyl2" path="res://Assets/custombuttons.tres" id="3_spsce"]
+[ext_resource type="Texture2D" uid="uid://hurqkiaoy2a1" path="res://Assets/b978c3af01002c418a6b38ffe5caf323.png" id="3_xykr3"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_w017s"]
 shader = ExtResource("2_1bwg8")

@@ -11,7 +11,7 @@ height = 47.5673
 top_level = true
 visibility_layer = 512
 z_index = 3
-scale = Vector2(119.921, 16.0005)
+y_sort_enabled = true
 script = ExtResource("1_jh66b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

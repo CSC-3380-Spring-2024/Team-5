@@ -1,6 +1,6 @@
 extends Control
 
-@onready var player = get_node("/root/PlayerManager")
+@onready var player : Node= get_node("/root/PlayerManager")
 
 var _is_paused:bool = false:
 	set = set_paused
@@ -29,6 +29,7 @@ func _on_resume_pressed():
 
 func _on_restart_pressed():
 	player.update_player_health(100)
+	player.update_player_experience(0)
 	LevelManager.set_current_level(1)
 	set_paused(false)
 	get_tree().change_scene_to_file("res://Scenes/Levels/level_1.tscn")

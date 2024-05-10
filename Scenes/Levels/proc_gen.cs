@@ -23,6 +23,7 @@ public partial class proc_gen : Node2D
     PackedScene Border;
     private int width;
     private int height;
+    private enemyManager enemyManager;
 
     public TileMap TileMapInstance
     {
@@ -65,6 +66,8 @@ public partial class proc_gen : Node2D
         noise.SetSeed((int)DateTime.Now.Ticks);
         noise.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
         noise.SetFrequency((float)0.04);
+        enemyManager=GetNode<enemyManager>("/root/EnemyManager");
+        enemyManager.resetEnemyCount();
     }
     public void GenerateLevel(int width, int height,Vector2I tile1,Vector2I tile2,Vector2I tile3)
     {

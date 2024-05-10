@@ -31,6 +31,7 @@ MasterSlider="*res://Audio/master_slider.gd"
 DamageNumbers="*res://Scenes/Player/PlayerSubscenes/damage_numbers.gd"
 LevelManager="*res://Scenes/Levels/level_manager.gd"
 PlayerManager="*res://Scenes/Player/player_manager.gd"
+EnemyManager="*res://Scenes/Enemies/enemyManager.cs"
 
 [display]
 

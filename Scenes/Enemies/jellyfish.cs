@@ -2,9 +2,6 @@ using System;
 using System.Runtime.CompilerServices;
 using Godot;
 
-using System;
-using System.Runtime.CompilerServices;
-using Godot;
 
 public partial class jellyfish : CharacterBody2D
 {
@@ -17,7 +14,20 @@ public partial class jellyfish : CharacterBody2D
 	private int speed = 150;
 	private Node player = null;
 	private bool playerChase = false;
-	pri	
+	private enemyState currentState = enemyState.Idle;
+	private AnimatedSprite2D enemySprite;
+	private float recoveryTime = 0.5f;
+	private float recoveryTimer = 0.0f;
+	private bool isIdle=false;
+	[Export] private float maxHealth = 200;
+	private float health;
+	private Vector2 lastDefeatedEnemyPosition = Vector2.Zero;
+	private PackedScene experienceScene;
+	private Node2D experienceOrbInstance;
+	private PackedScene caveScene;
+	private Node2D caveInstance;
+
+	private enemyManager enemyManager;
 	public override void _Ready()
 	{
 		GetNode<Godot.ProgressBar>("HealthBar").MaxValue=maxHealth;
@@ -25,6 +35,15 @@ public partial class jellyfish : CharacterBody2D
 		health = maxHealth;
 		enemySprite=GetNode<Godot.AnimatedSprite2D>("jellyfishSprite");
 		enemySprite.Play("idle");
+		experienceScene=(PackedScene)ResourceLoader.Load("res://Scenes/Collectibles/experience_orb.tscn");
+		experienceOrbInstance =(Node2D) experienceScene.Instantiate();
+		caveScene=(PackedScene)ResourceLoader.Load("res://Scenes/Map/cave.tscn");
+		caveInstance=(Node2D) caveScene.Instantiate();
+		enemyManager=GetNode<enemyManager>("/root/EnemyManager");
+		enemyManager.enemySpawned();
+		
+		
+		
 	}
 	public override void _Process(double delta)
 	{
@@ -102,8 +121,24 @@ public partial class jellyfish : CharacterBody2D
 	public void damage(float damageAmount){
 		health -= damageAmount;
 		GetNode<Godot.ProgressBar>("HealthBar").Value = health;
+		lastDefeatedEnemyPosition = GlobalPosition;
 		if(health <= 0){
+			experienceOrbInstance.Position = lastDefeatedEnemyPosition;
+			caveInstance.Position = lastDefeatedEnemyPosition;
+			enemyManager.enemyKilled();
 			QueueFree();
+			lastDefeatedEnemyPosition = GlobalPosition;
+			GetParent().AddChild(experienceOrbInstance);
+			
+			GD.Print(enemyManager.getNumEnemies());
+			if(enemyManager.getNumEnemies()==0){
+				caveInstance.Position = lastDefeatedEnemyPosition;
+				GetParent().AddChild(caveInstance);
+				
+			}
+			
 		}
 	}
+	
+	
 }

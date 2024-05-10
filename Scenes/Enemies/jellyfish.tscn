@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://cfmrwr4w530tq"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/jellyfish.cs" id="1_twupr"]
-[ext_resource type="Texture2D" uid="uid://hm5aell4x8v2" path="res://Assets/16x16/Sprites/3DS - Regular Show Mordecai and Rigby in 8-Bit Land - Mutant Jellyfish.png" id="2_avihw"]
+[ext_resource type="Texture2D" path="res://Assets/16x16/Sprites/jellyfish.png" id="2_avihw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pqfdo"]
 atlas = ExtResource("2_avihw")
@@ -157,7 +157,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5yj07"]
-radius = 221.839
+radius = 481.481
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mlp8e"]
 radius = 62.246

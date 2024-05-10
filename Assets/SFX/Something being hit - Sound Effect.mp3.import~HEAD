@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://m6dhlchp88y2"
+path="res://.godot/imported/Something being hit - Sound Effect.mp3-253a03a4688a153859a2a09032870d13.mp3str"
+
+[deps]
+
+source_file="res://TempResources/sfx/Something being hit - Sound Effect.mp3"
+dest_files=["res://.godot/imported/Something being hit - Sound Effect.mp3-253a03a4688a153859a2a09032870d13.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

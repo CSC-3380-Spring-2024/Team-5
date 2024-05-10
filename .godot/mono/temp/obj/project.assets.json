@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj",
+      "projectUniqueName": "C:\\Users\\No Thanks\\Desktop\\DDD\\New Game Project.csproj",
       "projectName": "New Game Project",
-      "projectPath": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj",
+      "projectPath": "C:\\Users\\No Thanks\\Desktop\\DDD\\New Game Project.csproj",
       "packagesPath": "C:\\Users\\No Thanks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "C:\\Users\\No Thanks\\Desktop\\DDD\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\No Thanks\\AppData\\Roaming\\NuGet\\NuGet.Config"

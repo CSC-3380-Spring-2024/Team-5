@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/Menu/game_over.gd" id="1_ly4y6"]
 [ext_resource type="FontFile" uid="uid://bv8ny1vjw7q08" path="res://fonts/StayPixelRegular-EaOxl.ttf" id="2_xf2wt"]
-[ext_resource type="Theme" uid="uid://iv2xraknp6pu" path="res://Assets/custombuttons.tres" id="3_vwbb6"]
+[ext_resource type="Theme" uid="uid://l4e0cnupcyl2" path="res://Assets/custombuttons.tres" id="3_vwbb6"]
 
 [sub_resource type="Theme" id="Theme_cvayd"]
 

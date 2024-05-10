@@ -2,7 +2,6 @@
 
 [ext_resource type="AudioStream" uid="uid://c1k1vw70safm8" path="res://Assets/SFX/night_theme_2.wav" id="1_c6eo0"]
 
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
 stream = ExtResource("1_c6eo0")
 autoplay = true

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6RSn9syqr0MJoztsN0JFExevc5YgHT7XjgMvmkmhaDiQSKk/z0nG1odpOsysR8a7qjys99Q+sYOFu4OkROs0zQ==",
+  "dgSpecHash": "clOhG8nV6BaFwV+MMovEzRXrwyzA9vHPZCt20HehMTfnxConwZI3jUOL58tmk/gmpkvyvEwfCHzTW87kismFVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\No Thanks\\Desktop\\DDD gui\\New Game Project.csproj",
+  "projectFilePath": "C:\\Users\\No Thanks\\Desktop\\DDD\\New Game Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\No Thanks\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
     "C:\\Users\\No Thanks\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",

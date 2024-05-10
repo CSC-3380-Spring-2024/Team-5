@@ -1,3 +1,4 @@
+AudioStreamPlayer2D
 Node2D
 ProgressBar
 Node
@@ -7,7 +8,6 @@ Area2D
 PlayerUpgrader
 AnimatedSprite2D
 Timer
-AudioStreamPlayer2D
 CanvasLayer
 VBoxContainer
 HBoxContainer
